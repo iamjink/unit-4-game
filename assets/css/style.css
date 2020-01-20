@@ -106,13 +106,20 @@ body {
     color: azure;
 }
 
-.crystals img {
+.crystalImage img {
     position: relative;
     display: inline-block;
+    
     left: 27%;
     transform: translate(-15%);
     margin: 0 auto;
     margin-top: 30px;
     position: center;
-    width: 100px;
+    width: 100px; 
+}
+
+button {
+    background-color: transparent;
+    border: 0 none;
+    box-shadow: none;
 }
