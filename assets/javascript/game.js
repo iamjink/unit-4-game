@@ -1,67 +1,100 @@
 $(document).ready(function () {
 
-    //random number generator
+            //random number generator
 
-    var RandomNumber = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
+            var RandomNumber = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
 
-    //assigning a hidden random value to each crystal between 1 and 12
+            //assigning a hidden random value to each crystal between 1 and 12
 
-    var buttonOne = Math.floor(Math.random() * 12) + 1;
-    var buttonTwo = Math.floor(Math.random() * 12) + 1;
-    var buttonThree = Math.floor(Math.random() * 12) + 1;
-    var buttonFour = Math.floor(Math.random() * 12) + 1;
+            var buttonOne = Math.floor(Math.random() * 12) + 1;
+            var buttonTwo = Math.floor(Math.random() * 12) + 1;
+            var buttonThree = Math.floor(Math.random() * 12) + 1;
+            var buttonFour = Math.floor(Math.random() * 12) + 1;
 
-    //setting variables for scores
-    var wins = 0;
-    var losses = 0;
-    var userTotal = 0;
+            //setting variables for scores
+            var wins = 0;
+            var losses = 0;
+            var userTotal = 0;
+
+            $("#randomNumber").text(RandomNumber);
+
+            //defining functions for scoreboard
+            function winScore() {
+                wins++;
+                $("#wins").text(wins);
+            }
+
+            function lossScore() {
+                losses++;
+                $("#losses").text(losses)
+
+            }
+
+            //click functions that random assign number to each button and add these numbers when clicked
+            $("#button-one").click(() => {
+                userTotal = userTotal + buttonOne;
+                $("#userNumber").text(userTotal);
+                if (userTotal === RandomNumber) {
+                    winScore();
+                    reset();
+                } else if (userTotal > RandomNumber) {
+                    lossScore();
+                    reset();
+                }
+            });
+
+            $("#button-two").click(() => {
+                userTotal = userTotal + buttonTwo;
+                $("#userNumber").text(userTotal);
+                if (userTotal === RandomNumber) {
+                    winScore();
+                    reset();
+                } else if (userTotal > RandomNumber) {
+                    lossScore();
+                    reset();
+                }
+            });
+
+            $("#button-three").click(() => {
+                userTotal = userTotal + buttonThree;
+                $("#userNumber").text(userTotal);
+                if (userTotal === RandomNumber) {
+                    winScore();
+                    reset();
+                } else if (userTotal > RandomNumber) {
+                    lossScore();
+                    reset();
+                }
+            });
+
+            $("#button-four").click(() => {
+                userTotal = userTotal + buttonFour;
+                $("#userNumber").text(userTotal);
+                if (userTotal === RandomNumber) {
+                    winScore();
+                    reset();
+                } else if (userTotal > RandomNumber) {
+                    lossScore();
+                    reset();
+                }
+            });
 
 
-    //defining functions
-    function winScore(){
-        wins ++;
-        $("#wins").text(wins);
-    }
-
-    function lossScore(){
-        losses++;
-        $("#losses").text(losses)
-
-    }
 
 
-    //pushing random number to match to show on screen
-    function MatchNumber() {
-        $("#randomNumber").text(RandomNumber);
+            //game reset function when win or loss score goes up by 1
+            function reset() {
+                userTotal = 0;
+                $("#userNumber").text(userTotal);
 
-    }
-
-
-
-    //functions at work
-    MatchNumber();
-    console.log(MatchNumber)
-
-    //assign numbers to each button
+                RandomNumber = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
+                $("#randomNumber").text(RandomNumber);
 
 
+                buttonOne = Math.floor(Math.random() * 12) + 1;
+                buttonTwo = Math.floor(Math.random() * 12) + 1;
+                buttonThree = Math.floor(Math.random() * 12) + 1;
+                buttonFour = Math.floor(Math.random() * 12) + 1;
+            }
 
-    //when total score equals MatchNumber, then win inreases by one and the number shows in the wins div.
-    function userScore() {
-        //onclick listner
-        //add values from clicks
-        return (result)(
-        $("#userNumber").text(score)
-    }
-
-
-    //if total score is > than MatchNumber, then loss number increases by one and shows up in the loss div.
-
-    if (userTotal === computerNumber) {
-        winScore();
-    } else if (userTotal > computerNumber) {
-        lossScore();
-      
-    }
-
-});
+        });
