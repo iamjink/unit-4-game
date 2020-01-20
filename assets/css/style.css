@@ -1,1 +1,100 @@
+body {
+    background-color: black;
+    background-image: url("../images/panelAsset.png");
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 1500px;
+    background-position: center;
+    background-attachment: fixed;
+}
 
+
+
+
+#Header {
+    font-size: 60px;
+    text-align: center;
+    color: #3a2618;
+    font-family: 'Wendy One', sans-serif;
+    letter-spacing: 2px;
+}
+
+.container {
+    position: relative;
+    position: center;
+    color: aqua;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 180px;
+    line-height: 1.8;
+    font-family: 'Poppins', sans-serif;
+}
+
+#instructions {
+    margin-top: 125px;
+}
+
+#insturctionsTitle {
+    font-size: 26px;
+    font-weight: bold;
+    color: #8afaff;
+}
+
+#wrapper {
+    color: burlywood;
+}
+#scoreBoardName {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+
+}
+
+#randomNumberContainer {
+    position: relative;
+    width: 60%;
+    float: left;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#scoreBoard {
+    position: relative;
+    width: 40%;
+    float: left;
+
+
+}
+
+#wins {
+    color: azure;
+}
+
+#losses {
+    color: azure;
+}
+
+#randomNumber {
+    color: azure;
+}
+
+#sumNumberBoard{
+    color: burlywood;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#userNumber {
+    color: azure;
+}
+
+.crystals img {
+    position: relative;         
+    display: inline-block;       
+    left: 27%;                   
+    transform: translate(-15%);
+    margin: 0 auto;
+    margin-top: 30px;
+    position: center;
+    width: 100px;
+}

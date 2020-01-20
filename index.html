@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- font links -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Wendy+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Crystals Collector</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 id="Header">Crystals Collector!</h1>
+        <br>
+
+        <ol id="instructions">
+            <h2 id="insturctionsTitle">Instructions</h2>
+           
+            <li>You will be given a random number
+                at the start of the game.</li>
+
+            <li>There are four crystals below. By clicking on a crystal
+                you will add a specific amount of poitns to your total score.</li>
+
+            <li>
+                You win the game by matching your total score to random number.
+                You lose the game if your total score goes above the random number.
+            </li>
+
+            <li>The value of each crystal is hidden from you until you click on it.</li>
+
+            <li>Each time when the game starts, the game will change the value of each crystal.</li>
+            <br>
+
+        </ol>
+        <br>
+        <div id="wrapper">
+            <div id="randomNumberContainer">
+                <h2>Numbers to Match:  <span id="randomNumber">0</span></h2>
+            </div>
+
+            <div id="scoreBoard">
+                <h2 id="scoreBoardName">Wins:  <span id="wins">0</span></h2>
+                <h2 id="scoreBoardName">Losses:  <span id="losses">0</span></h2>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="crystals">
+            <img class="crystalImage" alt="button-one" id="purple" src="assets/images/Asset 1.png">
+            <img class="crystalImage" alt="button-two" id="green" src="assets/images/Asset 4.png">
+            <img class="crystalImage" alt="button-three" id="red" src="assets/images/Asset 5.png">
+            <img class="crystalImage" alt="button-four" id="yellow " src="assets/images/Asset 6.png">
+        </div>
+
+        <div id="sumNumberBoard">
+            <h2 id="sumNumber">Your total score:  <span id="userNumber">0</span></h2>
+        </div>
+
+    </div>
+
+
+    <!-- scripts  -->
+    <script type="text/javascript" src="assets/javascript/games.js"></script>
+</body>
+
+</html>
