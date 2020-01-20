@@ -10,9 +10,10 @@ body {
     background-image: url("../images/panelAsset.png");
     background-repeat: no-repeat;
     position: relative;
-    background-size: 1500px;
+    /* background-size: 1500px; */
     background-position: center;
     background-attachment: fixed;
+    background-size: 65% auto;
     background-position: cover;
 }
 
@@ -25,29 +26,29 @@ body {
     color: #3a2618;
     font-family: 'Wendy One', sans-serif;
     letter-spacing: 2px;
+    margin-top: 270px;
 }
 
 .container {
- 
     position: center;
+
+    width: 600px;
+    height: 200px;
+    /* left: 50%; */
+    top: 0%;
+    margin-left: -300px; /*half the width*/
+    
     color: aqua;
     max-width: 900px;
-    
-    margin-top: 50px;
+    margin: 0 auto;
+    /* margin-top: 200px; */
     line-height: 1.8;
+    /* width: 55%; */
     font-family: 'Poppins', sans-serif;
-    padding-left: 600px;
-    padding-right: 600px;
-    padding-top: 125px;
-    padding-bottom: 300px;
-
-
- 
-
 }
 
 #instructions {
-    margin-top: 125px;
+    margin-top: 75px;
 }
 
 #insturctionsTitle {
