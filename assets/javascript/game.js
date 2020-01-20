@@ -1,4 +1,4 @@
-$(document).ready() {
+$(document).ready(function () {
 
     //random number generator
 
@@ -6,25 +6,39 @@ $(document).ready() {
 
     //assigning a hidden random value to each crystal between 1 and 12
 
-    var buttonOne = Math.floor(Math.random() *12) + 1;
-    var buttonTwo = Math.floor(Math.random() *12) + 1;
-    var buttonThree = Math.floor(Math.random() *12) + 1;
-    var buttonFour = Math.floor(Math.random() *12) + 1;
+    var buttonOne = Math.floor(Math.random() * 12) + 1;
+    var buttonTwo = Math.floor(Math.random() * 12) + 1;
+    var buttonThree = Math.floor(Math.random() * 12) + 1;
+    var buttonFour = Math.floor(Math.random() * 12) + 1;
 
-
+    //setting variables for scores
     var wins = 0;
     var losses = 0;
     var userTotal = 0;
-    var MatchNumber =
 
 
-        //pushing random number to match to show on screen
+    //defining functions
+    function winScore(){
+        wins ++;
+        $("#wins").text(wins);
+    }
 
-        function MatchNumber() {
-            $("#randomNumber").text(computerNumber);
+    function lossScore(){
+        losses++;
+        $("#losses").text(losses)
 
-        }
+    }
 
+
+    //pushing random number to match to show on screen
+    function MatchNumber() {
+        $("#randomNumber").text(RandomNumber);
+
+    }
+
+
+
+    //functions at work
     MatchNumber();
     console.log(MatchNumber)
 
@@ -36,20 +50,18 @@ $(document).ready() {
     function userScore() {
         //onclick listner
         //add values from clicks
-        return (result)
+        return (result)(
         $("#userNumber").text(score)
     }
 
-    userScore.click() {}
 
     //if total score is > than MatchNumber, then loss number increases by one and shows up in the loss div.
 
     if (userTotal === computerNumber) {
-        wins++;
-        $("#wins").text(wins)
+        winScore();
     } else if (userTotal > computerNumber) {
-        losses++;
-        $("#losses").text(losses)
+        lossScore();
+      
     }
 
-};
+});
