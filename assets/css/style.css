@@ -1,3 +1,10 @@
+/* @media screen and (max-width: 1024px) {
+    img.bg {
+        left: 50%;
+        margin-left: -512px;
+    }
+} */
+
 body {
     background-color: black;
     background-image: url("../images/panelAsset.png");
@@ -6,6 +13,7 @@ body {
     background-size: 1500px;
     background-position: center;
     background-attachment: fixed;
+    background-position: cover;
 }
 
 
@@ -20,14 +28,22 @@ body {
 }
 
 .container {
-    position: relative;
+ 
     position: center;
     color: aqua;
     max-width: 900px;
-    margin: 0 auto;
-    margin-top: 180px;
+    
+    margin-top: 50px;
     line-height: 1.8;
     font-family: 'Poppins', sans-serif;
+    padding-left: 600px;
+    padding-right: 600px;
+    padding-top: 125px;
+    padding-bottom: 300px;
+
+
+ 
+
 }
 
 #instructions {
@@ -43,6 +59,7 @@ body {
 #wrapper {
     color: burlywood;
 }
+
 #scoreBoardName {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
@@ -78,7 +95,7 @@ body {
     color: azure;
 }
 
-#sumNumberBoard{
+#sumNumberBoard {
     color: burlywood;
     font-weight: bold;
     font-size: 22px;
@@ -89,9 +106,9 @@ body {
 }
 
 .crystals img {
-    position: relative;         
-    display: inline-block;       
-    left: 27%;                   
+    position: relative;
+    display: inline-block;
+    left: 27%;
     transform: translate(-15%);
     margin: 0 auto;
     margin-top: 30px;
