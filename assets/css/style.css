@@ -1,24 +1,16 @@
-/* @media screen and (max-width: 1024px) {
-    img.bg {
-        left: 50%;
-        margin-left: -512px;
-    }
-} */
-
 body {
     background-color: black;
-    background-image: url("../images/panelAsset.png");
-    background-repeat: no-repeat;
-    position: relative;
-    /* background-size: 1500px; */
     background-position: center;
-    background-attachment: fixed;
-    background-size: 65% auto;
-    background-position: cover;
 }
 
+#headerPanel {
+    margin-top: 200px;
+}
 
-
+/* setting title text in center of image */
+#headerPanel img {
+    margin: 0 auto;
+}
 
 #Header {
     font-size: 60px;
@@ -26,29 +18,55 @@ body {
     color: #3a2618;
     font-family: 'Wendy One', sans-serif;
     letter-spacing: 2px;
-    margin-top: 270px;
+
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(5%, -45%);
 }
 
 .container {
-    position: center;
-
-    width: 600px;
-    height: 200px;
-    /* left: 50%; */
-    top: 0%;
-    margin-left: -300px; /*half the width*/
-    
+    position: relative;
     color: aqua;
     max-width: 900px;
     margin: 0 auto;
-    /* margin-top: 200px; */
     line-height: 1.8;
-    /* width: 55%; */
     font-family: 'Poppins', sans-serif;
 }
 
-#instructions {
-    margin-top: 75px;
+.container-2 {
+    position: relative;
+    color: aqua;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-3 {
+    position: relative;
+    color: aqua;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* setting text in center of image */
+#bigPanel {
+    margin: 0 auto;
+}
+
+#bigPanel img {
+    position: relative;
+    margin: 0 auto;
+}
+
+#mainPanelTextbox {
+    position: absolute;
+    top: 35%;
+    left: 33.33%;
+    transform: translate(-18%, -33.33%);
 }
 
 #insturctionsTitle {
@@ -59,29 +77,24 @@ body {
 
 #wrapper {
     color: burlywood;
+    overflow: hidden;
 }
 
+/* #scoreBoard {
+    float: left;
+} */
 #scoreBoardName {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 22px;
-
+   
 }
-
 #randomNumberContainer {
     position: relative;
     width: 60%;
-    float: left;
     font-weight: bold;
     font-size: 22px;
-}
-
-#scoreBoard {
-    position: relative;
-    width: 40%;
     float: left;
-
-
 }
 
 #wins {
@@ -102,20 +115,44 @@ body {
     font-size: 22px;
 }
 
-#userNumber {
-    color: azure;
+/* setting score text in center of image */
+
+#sumNumberBoard {
+    position: relative;
+    margin-left: 38%;
 }
 
+#sumNumberBoard img {
+    max-width: 300px;
+}
+
+#sumNumber {
+    position: absolute;
+    margin: 0 auto;
+    top: 10%;
+    left: 50%;
+    transform: translate(-115%, 50%);
+}
+
+#userNumber {
+    color: azure;
+    position: center;
+}
+
+#crystalImage {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 20%;
+    width: 600px;
+       
+}
 .crystalImage img {
     position: relative;
     display: inline-block;
-    
-    left: 27%;
-    transform: translate(-15%);
     margin: 0 auto;
     margin-top: 30px;
     position: center;
-    width: 100px; 
+    width: 100px;
 }
 
 button {
